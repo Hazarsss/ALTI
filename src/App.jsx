@@ -4,7 +4,7 @@ import MenuRoutes from "./components/MenuRoutes";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/ALTI/">
         <MenuRoutes />
       </Router>
     </>
