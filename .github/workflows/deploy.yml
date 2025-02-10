@@ -3,7 +3,7 @@ name: Deploy Vite to GitHub Pages
 on:
   push:
     branches:
-      - master # Change from 'main' to 'master'
+      - master # Ensure you're using master branch
 
 permissions:
   contents: read
