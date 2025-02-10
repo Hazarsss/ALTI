@@ -4,9 +4,10 @@ import MenuRoutes from "./components/MenuRoutes";
 function App() {
   return (
     <>
-      <Router basename="/ALTI/">
+      {/* <Router basename="/ALTI/">
         <MenuRoutes />
-      </Router>
+      </Router> */}
+      <p>TEST AJA</p>
     </>
   );
 }
