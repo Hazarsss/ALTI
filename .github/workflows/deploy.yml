@@ -19,11 +19,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: "pnpm"
+          node-version: "18" # Change to your Node.js version
+          cache: "pnpm" # Enable caching for pnpm dependencies
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Enable corepack & install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
