@@ -6,7 +6,4 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/ALTI/",
-  build: {
-    assetsInlineLimit: 0, // Ensures all assets are copied
-  },
 });

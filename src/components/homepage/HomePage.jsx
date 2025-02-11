@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
+import YouTube from "react-youtube";
 
 const HomePage = () => {
   const events = [
@@ -299,6 +300,19 @@ const HomePage = () => {
               </div>
             ))}
           </Slider>
+        </div>
+        <div className="tierevent-section"></div>
+        <section className="flex justify-center !m-25">
+          <p className="text-4xl">
+            WHERE WILL YOU MEET YOUR EXTRAORDINARY IN 2025 ?
+          </p>
+        </section>
+        <div className="youtube-section">
+          <iframe
+            className="youtube-frame"
+            src="https://www.youtube.com/embed/bvMtbOKmbY8?si=YUoJeAtkUpL7uq29"
+            frameborder="0"
+          ></iframe>
         </div>
       </main>
       <footer>

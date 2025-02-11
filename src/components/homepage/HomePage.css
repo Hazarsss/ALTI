@@ -107,7 +107,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Moves the image behind text */
+  z-index: -1;
+  background-size: cover;
 }
 
 /* Text Styling */
@@ -178,6 +179,27 @@
 
 .cardsponsor-body {
   padding: 5%;
+}
+
+/*------------------------------------Section 4 CSS */
+.tierevent-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("background-tier-event.png");
+  margin-top: 5%;
+  background-size: cover;
+}
+
+/*------------------------------------Section 5 CSS */
+.youtube-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.youtube-frame {
+  width: 67.8%;
+  height: 79vh;
 }
 
 /*------------------------------------Footer CSS */
