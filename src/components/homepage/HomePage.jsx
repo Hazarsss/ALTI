@@ -301,7 +301,13 @@ const HomePage = () => {
             ))}
           </Slider>
         </div>
-        <div className="tierevent-section"></div>
+        <div className="tierevent-section">
+          <img
+            className="h-full w-full object-cover"
+            src="background-tier-event.png"
+            alt="LogoTier"
+          />
+        </div>
         <section className="flex justify-center !m-25">
           <p className="text-4xl">
             WHERE WILL YOU MEET YOUR EXTRAORDINARY IN 2025 ?
