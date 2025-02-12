@@ -189,11 +189,53 @@
   background-size: cover;
 }
 
+.label-title-tierevent-section {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding-top: 4%;
+  font-size: xx-large;
+}
+
+.label-desc-tierevent-section {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding-top: 1%;
+  font-size: large;
+}
+
+.background-tier {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+}
+
+.card-body-tier {
+  height: 300px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures even spacing */
+  text-align: center;
+  padding: 10%;
+}
+
 /*------------------------------------Section 5 CSS */
 .youtube-section {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 5%;
+}
+
+.label-youtube-section {
+  margin-top: 13%;
 }
 
 .youtube-frame {

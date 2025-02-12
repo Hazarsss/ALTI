@@ -80,6 +80,26 @@ const HomePage = () => {
     },
   ];
 
+  const tiers = [
+    {
+      tiersnames: "ALTI Indonesian Series Event",
+      tiersdescription:
+        "Ready to propel you through gnarly terrain, the Tecton X 3 adds winglets ",
+      tiersimage: "tectonX3.png",
+    },
+    {
+      tiersnames: "ALTI Indonesian Series Majors",
+      tiersdescription:
+        "Cutting edge sports technology & training methods for athletes, explorers, and outdoor.",
+      tiersimage: "coros.png",
+    },
+    {
+      tiersnames: "ALTI Indonesian Series Final",
+      tiersdescription: "Hydrogel Sports Fuel – Carbohydrate-rich",
+      tiersimage: "maurten.png",
+    },
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -303,12 +323,64 @@ const HomePage = () => {
         </div>
         <div className="tierevent-section">
           <img
-            className="h-full w-full object-cover"
+            className="background-tier"
             src="background-tier-event.png"
             alt="LogoTier"
           />
+          <p className="label-title-tierevent-section">
+            STEP AWAY FROM ORDINARY AND RUN INTO EXTRAORDINARY
+          </p>
+          <p className="label-desc-tierevent-section">
+            UTMB® World Series is the world’s ultimate trail running circuit
+            that allows all runners to experience the UTMB adventure through the
+            best, leading international events. Built on the values of fair
+            play, solidarity, protection of our environment and delivering an
+            exceptional local experience, the UTMB World Series gives runners
+            the chance to live the UTMB adventure close to home and to begin
+            their quest to HOKA UTMB Mont-Blanc and the UTMB World Series
+            Finals.
+          </p>
+          <div className="mainsponsor-section flex justify-center items-center gap-10">
+            {tiers.map((event, index) => (
+              <Card
+                key={index}
+                className="w-full max-w-[25rem] h-165 overflow-hidden"
+              >
+                <CardHeader></CardHeader>
+                <CardBody className="card-body-tier">
+                  <Typography variant="h4" color="blue-gray" className="mb-2">
+                    {event.tiersnames}
+                  </Typography>
+                  <Typography
+                    variant="lead"
+                    color="gray"
+                    className="font-light !pt-5"
+                  >
+                    {event.tiersdescription}
+                  </Typography>
+                  <a href="#" className="inline-block mt-auto">
+                    <Button variant="text" className="items-center !mt-10">
+                      <p className="underline light">Read More</p>
+                    </Button>
+                  </a>
+                </CardBody>
+                <CardFooter
+                  floated={false}
+                  shadow={false}
+                  color="transparent"
+                  className="m-0 rounded-none"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                    alt="ui/ux review check"
+                    className="h-90 object-cover "
+                  />
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
         </div>
-        <section className="flex justify-center !m-25">
+        <section className="label-youtube-section flex justify-center">
           <p className="text-4xl">
             WHERE WILL YOU MEET YOUR EXTRAORDINARY IN 2025 ?
           </p>
