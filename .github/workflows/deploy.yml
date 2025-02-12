@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
       - name: Install Dependencies
-        run: pnpm ci
+        run: pnpm install
       - name: Build Project
         run: pnpm run build
       - name: Upload artifacts
